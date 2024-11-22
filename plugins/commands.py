@@ -48,6 +48,69 @@ def get_size(size):
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
+
+#fsub
+    class Config:
+    UPDATES_CHANNELS = ["-1002483117711", "-1001914550244"]  # Replace with your channel IDs or usernames
+
+
+async def ForceSub(client: Client, message: Message):
+    """
+    Enforce the user to subscribe to two channels before they can use the bot.
+    """
+    try:
+        # Generate invite links for both channels
+        invite_links = {}
+        for channel in Config.UPDATES_CHANNELS:
+            try:
+                invite_link = await client.create_chat_invite_link(
+                    chat_id=(int(channel) if channel.startswith("-100") else channel)
+                )
+                invite_links[channel] = invite_link.invite_link
+            except Exception as e:
+                print(f"Error generating invite link for {channel}: {e}")
+                invite_links[channel] = None
+
+        # Check user membership in both channels
+        for channel in Config.UPDATES_CHANNELS:
+            try:
+                user = await client.get_chat_member(
+                    chat_id=(int(channel) if channel.startswith("-100") else channel),
+                    user_id=message.from_user.id
+                )
+                if user.status == "kicked":
+                    await client.send_message(
+                        chat_id=message.from_user.id,
+                        text="❌ **You are banned from using this bot. Contact support for more information.**",
+                        parse_mode="Markdown"
+                    )
+                    return 400
+            except Exception:
+                # If user is not a member or the check fails
+                await client.send_message(
+                    chat_id=message.from_user.id,
+                    text="🔒 **Please join both channels to use this bot!**",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [InlineKeyboardButton("📢 Join Channel 1", url=invite_links[Config.UPDATES_CHANNELS[0]])],
+                            [InlineKeyboardButton("📢 Join Channel 2", url=invite_links[Config.UPDATES_CHANNELS[1]])],
+                            [InlineKeyboardButton("🔄 Retry", url="https://t.me/YourBotUsername?start=start")]
+                        ]
+                    )
+                )
+                return 400
+
+    except Exception as e:
+        print(f"Error in ForceSub function: {e}")
+        await client.send_message(
+            chat_id=message.from_user.id,
+            text="⚠️ **An error occurred. Please try again later or contact support.**",
+            parse_mode="Markdown"
+        )
+        return 400
+
+    return 200
+    
     username = (await client.get_me()).username
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
