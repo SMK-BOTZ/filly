@@ -4,7 +4,7 @@
 
 
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {} \n\n I can store private files in Animes Duo Channel and other users can access it from special link. \n\n ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴠʀ ᴜɴʀᴇᴀʟ✨ (https://t.me/VR_unreal)</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {} \n\n I can store private files in Animes Duo Channel and other users can access it from special link. \n\n ᴘᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/VR_unreal>ᴠʀ ᴜɴʀᴇᴀʟ ✨</a></b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
