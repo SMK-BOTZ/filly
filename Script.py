@@ -37,19 +37,12 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    ABOUT_TXT = """<b>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀɴᴅ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.
+    ABOUT_TXT = """<b>○ 𝐎ᴡɴᴇʀ : <a href=https://t.me/Fushiguro_x>𝐅ᴜsʜɪɢᴜʀᴏ</a>
+○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀɴɴᴇʟ : <a href=https://t.me/Anime_Duo>𝐀ɴɪᴍᴇ 𝐇ɪɴᴅɪ</a>
+○ 𝐇ᴀɴɪᴍᴇ 𝐂ʜᴀɴɴᴇʟ : <a href=https://t.me/+rqJjl4BBd3M4NDc1>𝐇ᴜɴᴛᴀɪ 𝐖ᴏʀʟᴅ</a>
+○ 𝐃ᴇᴠʟᴏᴘᴇʀ : <a href=https://t.me/VR_Necromancer>ɴᴇᴄʀᴏᴍᴀɴᴄᴇʀ</a>
 
-🤖 ᴍʏ ɴᴀᴍᴇ: <a href=https://t.me/Hindi_Anime_File_Bot>Steve</a>
-
-📝 ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>ᴘʏᴛʜᴏɴ3</a>
-
-📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>ᴘʏʀᴏɢʀᴀᴍ</a>
-
-🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Shubham_X_official>♡ ꜱʜᴜʙʜᴀᴍ ♡</a>
-
-👥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Anime_Duo>ᴀɴɪᴍᴇ ᴅᴜᴏ</a>
-
-📢 ʜᴇᴍᴛᴀɪ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/+x5jcDgIGC4RlYWQ1>𝐇ᴜɴᴛᴀɪ 𝐖ᴏʀʟᴅ</a></b>
+○ ᴘᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/VR_unreal>ᴠʀ ᴜɴʀᴇᴀʟ✨</a> </b>
 """
 
     CABOUT_TXT = """<b>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀɴᴅ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.
